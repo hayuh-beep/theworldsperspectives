@@ -1,0 +1,167 @@
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== BODY ===== */
+body {
+    font-family: 'Georgia', serif;
+    color: #2b2b2b;
+    background: linear-gradient(135deg, #fdf6ff, #eef6ff, #fff3e8);
+}
+
+/* ===== NAV ===== */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    align-items: center;
+}
+
+.nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+.logo {
+    color: white;
+}
+
+/* ===== HERO ===== */
+.hero {
+    height: 90vh;
+    background: linear-gradient(135deg, #7b5cff, #ff7eb3, #ffb86b);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hero-text {
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+/* ===== BUTTON ===== */
+.btn {
+    padding: 12px 24px;
+    background: white;
+    color: #7b5cff;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+/* ===== SECTIONS ===== */
+.section {
+    padding: 80px 10%;
+}
+
+.video-section {
+    text-align: center;
+}
+
+.video-wrapper iframe {
+    width: 100%;
+    max-width: 800px;
+    height: 450px;
+    border-radius: 12px;
+}
+
+/* ===== SPLIT SECTION ===== */
+.split {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.text {
+    flex: 1;
+}
+
+.visual {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.blob {
+    width: 250px;
+    height: 250px;
+    background: linear-gradient(135deg, #7b5cff, #ff7eb3);
+    border-radius: 50%;
+    filter: blur(40px);
+}
+
+/* ===== PAPER PAGE ===== */
+.paper-header {
+    background: linear-gradient(135deg, #7b5cff, #ff7eb3);
+    color: white;
+}
+
+.paper-title {
+    text-align: center;
+    padding: 40px;
+}
+
+.paper {
+    background: white;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 60px;
+    border-radius: 12px;
+    line-height: 1.8;
+}
+
+.paper h2 {
+    margin-top: 30px;
+    color: #5a3fc0;
+}
+
+.paper p {
+    margin-top: 10px;
+    text-align: justify;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    padding: 30px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .split {
+        flex-direction: column;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .video-wrapper iframe {
+        height: 250px;
+    }
+}
